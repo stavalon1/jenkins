@@ -31,6 +31,7 @@ pipeline {
                 // run testing
                 nodejs('nodejs18') {
                 sh "npm run test"
+                echo "heyyy"
         }
             }
         }
