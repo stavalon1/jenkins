@@ -40,6 +40,15 @@ pipeline {
         }
             }
                 }
+           
+                stage('test') {
+            steps {
+                // is the test for auto build
+                nodejs('nodejs18') {
+                sh "npm run test"
+        }
+            }
+        }
         
        }
     }
